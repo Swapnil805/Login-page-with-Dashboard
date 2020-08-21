@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>ORDER STATUS DASHBOARD</h1>
+    </div>
+    <hr>
+    <div class="tab">
+    <table class="table table-striped table-bordered">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">S.no</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Order ID</th>
+            <th scope="col" width="500px">Order Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>784569</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(1)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(1)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(1)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(1)">Return</a>
+                </div>
+              </div>
+            <span id="1"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>812546</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(2)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(2)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(2)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(2)">Return</a>
+                </div>
+              </div>
+            <span id="2"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>215463</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(3)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(3)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(3)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(3)">Return</a>
+                </div>
+              </div>
+            <span id="3"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Micheal</td>
+            <td>636963</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(4)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(4)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(4)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(4)">Return</a>
+                </div>
+              </div>
+            <span id="4"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Damon</td>
+            <td>124589</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(5)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(5)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(5)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(5)">Return</a>
+                </div>
+              </div>
+            <span id="5"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Stefan</td>
+            <td>745896</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(6)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(6)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(6)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(6)">Return</a>
+                </div>
+              </div>
+            <span id="6"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Caroline</td>
+            <td>124987</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(7)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(7)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(7)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(7)">Return</a>
+                </div>
+              </div>
+            <span id="7"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Alena</td>
+            <td>235416</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(8)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(8)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(8)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(8)">Return</a>
+                </div>
+              </div>
+            <span id="8"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Alaric</td>
+            <td>012547</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(9)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(9)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(9)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(9)">Return</a>
+                </div>
+              </div>
+            <span id="9"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Jenna</td>
+            <td>032568</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(10)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(10)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(10)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(10)">Return</a>
+                </div>
+              </div>
+            <span id="10"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">11</th>
+            <td>Enzo</td>
+            <td>984756</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(11)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(11)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(11)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(11)">Return</a>
+                </div>
+              </div>
+            <span id="11"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">12</th>
+            <td>Bonnie</td>
+            <td>654985</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(12)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(12)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(12)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(12)">Return</a>
+                </div>
+              </div>
+            <span id="12"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">13</th>
+            <td>Matt</td>
+            <td>457694</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(13)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(13)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(13)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(13)">Return</a>
+                </div>
+              </div>
+            <span id="13"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">14</th>
+            <td>Tyler</td>
+            <td>147852</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(14)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(14)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(14)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(14)">Return</a>
+                </div>
+              </div>
+            <span id="14"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">15</th>
+            <td>Niklaus</td>
+            <td>984125</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(15)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(15)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(15)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(15)">Return</a>
+                </div>
+              </div>
+            <span id="15"></span></td>
+          </tr>
+          <tr>
+            <th scope="row">16</th>
+            <td>Elijah</td>
+            <td>631452</td>
+            <td><div class="btn-group">
+                <button type="button" class="btn btn-success">Status</button>
+                <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="sr-only">Toggle Dropdown</span>
+                </button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#" onclick="placed(16)">Placed</a>
+                  <a class="dropdown-item" href="#" onclick="shipped(16)">Shipped</a>
+                  <a class="dropdown-item" href="#" onclick="delivered(16)">Delivered</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#" onclick="retur(16)">Return</a>
+                </div>
+              </div>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+ <script src="secondpage.js"></script>
+</body>
+</html>   

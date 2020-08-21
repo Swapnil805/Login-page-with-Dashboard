@@ -1,0 +1,29 @@
+body {
+    background: url("sec.jpg") center center fixed no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+    height: 100% ;
+    font-family: sans-serif;
+    background-attachment: fixed;
+}
+.container {
+    margin: 5% ;
+}
+hr {
+    border-top: 2px solid grey;
+}
+h1 {
+    color: rgb(21, 98, 199);
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 2px navy;
+}
+/* to make the table scrollable */
+/* .tab {
+    overflow-y : scroll ;
+    height: 800px;
+} */
+/* table
+{
+    table-layout: fixed;
+  
+} */
